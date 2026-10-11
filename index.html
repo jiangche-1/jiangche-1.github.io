@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Jun Jiang (蒋俊) — Personal Homepage</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1a1a1a;
+    --muted: #555;
+    --accent: #1f4e79;
+    --border: #e5e5e5;
+    --card: #fafafa;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--fg);
+    line-height: 1.65;
+  }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 48px 24px 80px; }
+  header {
+    display: flex;
+    align-items: flex-start;
+    gap: 28px;
+    flex-wrap: wrap;
+    padding-bottom: 28px;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 28px;
+  }
+  .avatar {
+    width: 120px; height: 120px; flex: 0 0 120px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #1f4e79, #4a90d9);
+    color: #fff;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 44px; font-weight: 600; letter-spacing: 1px;
+  }
+  h1 { margin: 0 0 4px; font-size: 30px; }
+  .cn-name { color: var(--muted); font-weight: 500; margin-left: 8px; font-size: 20px; }
+  .affil { color: var(--muted); font-size: 15px; margin: 2px 0 8px; }
+  .contact { font-size: 15px; }
+  .contact span { color: var(--muted); }
+  section { margin-bottom: 32px; }
+  h2 {
+    font-size: 19px;
+    margin: 0 0 14px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--border);
+    color: var(--accent);
+  }
+  ul { margin: 0; padding-left: 20px; }
+  li { margin: 6px 0; }
+  .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px; }
+  .tag {
+    background: #eef3f8;
+    color: var(--accent);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+  }
+  .pub { padding: 12px 0; border-bottom: 1px dashed var(--border); }
+  .pub:last-child { border-bottom: none; }
+  .pub .title { font-weight: 600; }
+  .pub .meta { color: var(--muted); font-size: 14px; }
+  footer {
+    margin-top: 40px; padding-top: 20px;
+    border-top: 1px solid var(--border);
+    color: var(--muted); font-size: 13px;
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="avatar">JJ</div>
+      <div>
+        <h1>Jun Jiang<span class="cn-name">蒋俊</span></h1>
+        <p class="affil">Central South University</p>
+        <p class="contact">
+          <span>Email:</span> <a href="mailto:264712173@csu.edu.cn">264712173@csu.edu.cn</a>
+        </p>
+      </div>
+    </header>
+
+    <section>
+      <h2>About</h2>
+      <p>
+        I am a researcher at Central South University, working on
+        <strong>Multimodal Aspect-Based Sentiment Analysis</strong>.
+        My research focuses on understanding fine-grained sentiment expressed
+        across multiple modalities, including text and vision.
+      </p>
+    </section>
+
+    <section>
+      <h2>Research Interests</h2>
+      <div class="tags">
+        <span class="tag">Multimodal Aspect-Based Sentiment Analysis</span>
+        <span class="tag">Multimodal Learning</span>
+        <span class="tag">Natural Language Processing</span>
+        <span class="tag">Sentiment Analysis</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>Publications</h2>
+      <div class="pub">
+        <div class="title">[Under Review]</div>
+        <div class="meta">Multimodal Aspect-Based Sentiment Analysis</div>
+      </div>
+    </section>
+
+    <footer>
+      &copy; <span id="year"></span> Jun Jiang (蒋俊) · Central South University
+    </footer>
+  </div>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
